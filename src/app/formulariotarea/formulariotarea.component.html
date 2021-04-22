@@ -1,0 +1,18 @@
+
+<form [formGroup]="formulario" (ngSubmit)="metodo()">
+
+    <h4>Nombre: </h4> <input type="text" formControlName="nombre">
+    <br>
+    <h4>Apellido materno: </h4> <input type="text" formControlName="materno">
+    <br>
+    <h4>Apellido paterno: </h4> <input type="text" formControlName="paterno">
+    <br>
+    <h4>Rut: </h4> <input type="text" formControlName="rut">
+    <br>
+    <h4>Edad: </h4> <input type="number" formControlName="edad">
+    <br>
+    <button type="submit">Inscribirse</button>
+    <div>{{datos}}</div>
+
+</form>
+
